@@ -1,5 +1,43 @@
 @import "tailwindcss";
 
+@theme {
+  /*
+    Brand Colors
+    Extracted from the website UI. The primary brand color is a vibrant green.
+  */
+  --color-web-green-50: #e6f6ee;
+  --color-web-green-100: #bcf0d8;
+  --color-web-green-200: #8ce9c1;
+  --color-web-green-300: #5ce3aa;
+  --color-web-green-400: #2bdb93;
+  --color-web-green-500: #00A950; /* Main Green (Buttons, Active states) */
+  --color-web-green-600: #009947; /* Darker Green (Header) */
+  --color-web-green-700: #00803c;
+  --color-web-green-800: #006633;
+  --color-web-green-900: #004d26;
+
+  /*
+    Gray Scale (For text and backgrounds)
+  */
+  --color-web-gray-50: #f9fafb;
+  --color-web-gray-100: #f3f4f6;
+  --color-web-gray-200: #e5e7eb;
+  --color-web-gray-300: #d1d5db;
+  --color-web-gray-400: #9ca3af;
+  --color-web-gray-500: #6b7280;
+  --color-web-gray-600: #4b5563;
+  --color-web-gray-700: #374151;
+  --color-web-gray-800: #1f2937;
+  --color-web-gray-900: #111827;
+
+  /*
+    Shadow
+    A subtle shadow for cards
+  */
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

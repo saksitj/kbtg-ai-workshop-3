@@ -39,12 +39,12 @@ export default function Payment() {
   }
 
   return (
-    <div className="bg-black text-white p-8 rounded-lg max-w-md mx-auto">
+    <div className="bg-web-gray-800 text-white p-8 rounded-lg max-w-md mx-auto shadow-lg">
       <form onSubmit={handleSubmit}>
         {/* Header */}
         <div className="mb-8">
           <h2 className="text-xl font-semibold mb-2">Payment Method</h2>
-          <p className="text-gray-400 text-sm">All transactions are secure and encrypted</p>
+          <p className="text-web-gray-400 text-sm">All transactions are secure and encrypted</p>
         </div>
 
         {/* Name on Card */}
@@ -55,7 +55,7 @@ export default function Payment() {
             name="nameOnCard"
             value={formData.nameOnCard}
             onChange={handleChange}
-            className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:border-blue-500 focus:outline-none"
+            className="w-full bg-web-gray-700 border border-web-gray-600 rounded-lg px-4 py-3 text-white placeholder-web-gray-400 focus:border-web-green-500 focus:outline-none"
             placeholder="John Doe"
           />
         </div>
@@ -69,7 +69,7 @@ export default function Payment() {
               name="cardNumber"
               value={formData.cardNumber}
               onChange={handleChange}
-              className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:border-blue-500 focus:outline-none"
+              className="w-full bg-web-gray-700 border border-web-gray-600 rounded-lg px-4 py-3 text-white placeholder-web-gray-400 focus:border-web-green-500 focus:outline-none"
               placeholder="1234 5678 9012 3456"
             />
           </div>
@@ -80,13 +80,13 @@ export default function Payment() {
               name="cvv"
               value={formData.cvv}
               onChange={handleChange}
-              className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:border-blue-500 focus:outline-none"
+              className="w-full bg-web-gray-700 border border-web-gray-600 rounded-lg px-4 py-3 text-white placeholder-web-gray-400 focus:border-web-green-500 focus:outline-none"
               placeholder="123"
               maxLength="3"
             />
           </div>
         </div>
-        <p className="text-gray-400 text-xs mb-6">Enter your 16-digit number.</p>
+        <p className="text-web-gray-400 text-xs mb-6">Enter your 16-digit number.</p>
 
         {/* Month and Year */}
         <div className="grid grid-cols-2 gap-4 mb-8">
@@ -96,7 +96,7 @@ export default function Payment() {
               name="month"
               value={formData.month}
               onChange={handleChange}
-              className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:border-blue-500 focus:outline-none appearance-none"
+              className="w-full bg-web-gray-700 border border-web-gray-600 rounded-lg px-4 py-3 text-white focus:border-web-green-500 focus:outline-none appearance-none"
             >
               <option value="MM">MM</option>
               <option value="01">01</option>
@@ -119,7 +119,7 @@ export default function Payment() {
               name="year"
               value={formData.year}
               onChange={handleChange}
-              className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:border-blue-500 focus:outline-none appearance-none"
+              className="w-full bg-web-gray-700 border border-web-gray-600 rounded-lg px-4 py-3 text-white focus:border-web-green-500 focus:outline-none appearance-none"
             >
               <option value="YYYY">YYYY</option>
               <option value="2024">2024</option>
@@ -135,14 +135,14 @@ export default function Payment() {
         {/* Billing Address */}
         <div className="mb-6">
           <h3 className="text-lg font-medium mb-2">Billing Address</h3>
-          <p className="text-gray-400 text-sm mb-4">The billing address associated with your payment method</p>
+          <p className="text-web-gray-400 text-sm mb-4">The billing address associated with your payment method</p>
           <div className="flex items-center">
             <input
               type="checkbox"
               name="sameAsShipping"
               checked={formData.sameAsShipping}
               onChange={handleChange}
-              className="w-4 h-4 bg-blue-600 border-blue-600 rounded focus:ring-blue-500 focus:ring-2"
+              className="w-4 h-4 bg-web-green-500 border-web-green-500 rounded focus:ring-web-green-500 focus:ring-2"
             />
             <label className="ml-2 text-sm">Same as shipping address</label>
           </div>
@@ -156,7 +156,7 @@ export default function Payment() {
             value={formData.comments}
             onChange={handleChange}
             rows="4"
-            className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:border-blue-500 focus:outline-none resize-none"
+            className="w-full bg-web-gray-700 border border-web-gray-600 rounded-lg px-4 py-3 text-white placeholder-web-gray-400 focus:border-web-green-500 focus:outline-none resize-none"
             placeholder="Add any additional comments"
           />
         </div>
@@ -165,14 +165,14 @@ export default function Payment() {
         <div className="flex gap-4">
           <button
             type="submit"
-            className="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
+            className="flex-1 bg-web-green-500 hover:bg-web-green-600 text-white font-medium py-3 px-6 rounded-lg transition-colors"
           >
             Submit
           </button>
           <button
             type="button"
             onClick={handleCancel}
-            className="flex-1 bg-gray-700 hover:bg-gray-600 text-white font-medium py-3 px-6 rounded-lg transition-colors"
+            className="flex-1 bg-web-gray-600 hover:bg-web-gray-500 text-white font-medium py-3 px-6 rounded-lg transition-colors"
           >
             Cancel
           </button>
